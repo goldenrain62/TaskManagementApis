@@ -164,10 +164,4 @@
 /home/bean/Projects/Personal/TaskManagementApis/obj/Debug/net9.0/TaskManagementApis.pdb
 /home/bean/Projects/Personal/TaskManagementApis/obj/Debug/net9.0/TaskManagementApis.genruntimeconfig.cache
 /home/bean/Projects/Personal/TaskManagementApis/obj/Debug/net9.0/ref/TaskManagementApis.dll
-/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/out/web.config
-/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/out/appsettings.Development.json
-/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/out/appsettings.json
-/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/out/TaskManagementApis.deps.json
-/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/out/TaskManagementApis.runtimeconfig.json
-/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/out/TaskManagementApis.staticwebassets.endpoints.json
 /home/bean/Projects/Personal/TaskManagementApis/obj/Debug/net9.0/TaskManagementApis.sourcelink.json
