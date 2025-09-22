@@ -100,9 +100,9 @@ dotnet ef database update
 These commands:
 - **dotnet restore**: Downloads all the NuGet packages listed in .csproj file.
 - **dotnet tool install --global dotnet-ef**: installs the EF CLI globally so you can use dotnet ef anywhere.
-- **dotnet ef --version**: verifies if EF CLI works. If you see a version number, you're good to go.
+- **dotnet ef --version**: verifies if EF CLI works. If you see a version number, we're good to go.
 - **dotnet build**: Compiles the project and checks for build errors. If you see "Build succeeded", the project is built successfully.
-- **dotnet ef migrations add InitialCreate**: Generates a migration file to define your initial database schema.
+- **dotnet ef migrations add InitialCreate**: Generates a Migration folder storing migration files to define initial database schema.
 - **dotnet ef database update**: Applies the migration and creates the database (if it doesn't exist).
 
 
@@ -249,5 +249,10 @@ Use Postman or Insomnia to test the api.
 | GET    | `/api/v1/tokens`             | List all refresh tokens      |
 | DELETE | `/api/v1/tokens/{id}`        | Revoke a specific token      |
 | DELETE | `/api/v1/tokens/type/{type}` | Revoke all/inactive tokens   |
+
+
+
+## 📷 Screenshots
+
   
 
