@@ -165,3 +165,5 @@
 /home/bean/Projects/Personal/TaskManagementApis/obj/Debug/net9.0/TaskManagementApis.genruntimeconfig.cache
 /home/bean/Projects/Personal/TaskManagementApis/obj/Debug/net9.0/ref/TaskManagementApis.dll
 /home/bean/Projects/Personal/TaskManagementApis/obj/Debug/net9.0/TaskManagementApis.sourcelink.json
+/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/DotNetEnv.dll
+/home/bean/Projects/Personal/TaskManagementApis/bin/Debug/net9.0/Sprache.dll

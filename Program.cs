@@ -7,6 +7,15 @@ using TaskManagementApis.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Load .env file
+DotNetEnv.Env.Load();
+
+var connectionString = $"Server={Environment.GetEnvironmentVariable("DB_SERVER")},{Environment.GetEnvironmentVariable("DB_PORT")};" +
+                       $"Database={Environment.GetEnvironmentVariable("DB_NAME")};" +
+                       $"User Id={Environment.GetEnvironmentVariable("DB_USER")};" +
+                       $"Password={Environment.GetEnvironmentVariable("DB_PASSWORD")};" +
+                       $"TrustServerCertificate=True;";
+
 // Register services
 builder.Services.AddControllers();
 builder.Services.AddScoped<JwtService>();
@@ -14,8 +23,7 @@ builder.Services.AddScoped<RefreshTokenService>();
 builder.Services.AddScoped<HasherService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+    options.UseSqlServer(connectionString));
 
 // Add Authentication
 builder.Services.AddAuthentication(options => {
