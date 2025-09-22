@@ -79,6 +79,7 @@ DB_PASSWORD=622001
   ```bash
   ipconfig
   ```
+  Look for "IPv4 Address" in Ethernet adapter (if wired) or Wireless LAN adapter Wi-Fi (if using Wi-Fi).
 - **DB_PORT**: The port SQL Server is listening on — typically 1433.
 - **DB_USER**: The name of your database. You can choose any name you like.
 - **DB_USER / DB_PASSWORD**: The SQL Server login credentials you created in Step 1.
@@ -90,12 +91,14 @@ DB_PASSWORD=622001
 
 ```bash
 dotnet restore
+dotnet tool install --global dotnet-ef
 dotnet build
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 These commands:
 - **dotnet restore**: Downloads all the NuGet packages listed in .csproj file.
+- **dotnet tool install --global dotnet-ef**: installs the EF CLI globally so you can use dotnet ef anywhere. 
 - **dotnet build**: Compiles the project and checks for build errors.
 - **dotnet ef migrations add InitialCreate**: Generates a migration file to define your initial database schema.
 - **dotnet ef database update**: Applies the migration and creates the database (if it doesn't exist).
