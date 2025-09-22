@@ -56,7 +56,7 @@ To enable SQL authentication, you’ll need to create a SQL Server login using *
 
 ```bash
 git clone https://github.com/goldenrain62/TaskManagementApis.git
-cd task-management-api
+cd TaskManagementApis
 ```
 
 
