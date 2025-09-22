@@ -115,8 +115,8 @@ dotnet run
 - **dotnet build**: Once again compiles the project and checks for any errors. 
 - **dotnet run**: Launches the application and starts the web server.
 
-Use Postman or Insomnia to test the api. 
-**The sample data to test, just check each file in Data/Configurations.**
+Use Postman or Insomnia to test the api. <br>
+**The sample data to test, just check each file in `Data/Configurations`.**
 
 
 ## 🧭 Endpoints
