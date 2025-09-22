@@ -127,6 +127,7 @@ Use Postman or Insomnia to test the api.
 | POST   | `/api/v1/auth/login`      | Login and receive JWT + refresh token   |
 | POST   | `/api/v1/auth/refresh`    | Refresh access token using refresh token|
 | POST   | `/api/v1/auth/logout`     | Revoke refresh token                    |
+| POST   | `/api/v1/auth/rac`        | Remove all cookies                      |
 
 ---
 
