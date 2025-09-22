@@ -79,7 +79,7 @@ DB_PASSWORD=622001
   ```bash
   ipconfig
   ```
-  Look for "IPv4 Address" in Ethernet adapter (if wired) or Wireless LAN adapter Wi-Fi (if using Wi-Fi).
+  Look for "IPv4 Address" in **Wireless LAN adapter Wi-Fi** (if using Wi-Fi) or **Ethernet adapter** (if wired).
 - **DB_PORT**: The port SQL Server is listening on — typically 1433.
 - **DB_USER**: The name of your database. You can choose any name you like.
 - **DB_USER / DB_PASSWORD**: The SQL Server login credentials you created in Step 1.
