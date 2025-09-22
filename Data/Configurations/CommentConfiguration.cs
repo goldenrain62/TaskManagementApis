@@ -34,6 +34,6 @@ public class CommentConfiguration : IEntityTypeConfiguration<Comment> {
     entity.HasOne(c => c.ParentComment)
       .WithMany(pc => pc.Replies)
       .HasForeignKey(c => c.RepliesTo)
-      .OnDelete(DeleteBehavior.Cascade);
+      .OnDelete(DeleteBehavior.SetNull);
   }
 }
