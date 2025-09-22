@@ -127,38 +127,39 @@ Use Postman or Insomnia to test the api.
 
 ### 👤 Account
 
-| Method | Endpoint                        | Description              |
-|--------|----------------------------------|--------------------------|
-| GET    | `/api/v1/accounts`              | List all accounts        |
-| GET    | `/api/v1/accounts/{username}`   | Get account by username  |
-| POST   | `/api/v1/accounts`              | Create a new account     |
-| PUT    | `/api/v1/accounts/{username}`   | Update account info      |
-| DELETE | `/api/v1/accounts/{username}`   | Delete account           |
+| Method | Endpoint                                    | Description                      |
+|--------|-------------------------------------------- |----------------------------------|
+| GET    | `/api/v1/accounts`                          | List all accounts                |
+| GET    | `/api/v1/accounts/by_username/{username}`   | Get account by username          |
+| GET    | `/api/v1/accounts/by_id/{id}`               | Get account by id                |
+| POST   | `/api/v1/accounts`                          | Create one or many new accounts  |
+| PUT    | `/api/v1/accounts`                          | Update one or many accounts info |
+| DELETE | `/api/v1/accounts`                          | Delete one or many accounts      |
 
 ---
 
 ### 🧑‍💼 Employee
 
-| Method | Endpoint                                 | Description                    |
-|--------|-------------------------------------------|--------------------------------|
-| GET    | `/api/v1/employees`                      | List all employees             |
-| GET    | `/api/v1/employees/{id}`                 | Get employee by ID             |
-| POST   | `/api/v1/employees`                      | Create a new employee          |
-| PUT    | `/api/v1/employees/{id}`                 | Update employee info           |
-| DELETE | `/api/v1/employees/{id}`                 | Delete employee                |
-| GET    | `/api/v1/employees/{id}/subordinates`    | Get subordinates of employee   |
+| Method | Endpoint                                 | Description                       |
+|--------|------------------------------------------|---------------------------------  |
+| GET    | `/api/v1/employees`                      | List all employees                |
+| GET    | `/api/v1/employees/{id}`                 | Get employee by ID                |
+| POST   | `/api/v1/employees`                      | Create one or many new employees  |
+| PUT    | `/api/v1/employees`                      | Update one or many employees info |
+| DELETE | `/api/v1/employees`                      | Delete one or many employees      |
+| GET    | `/api/v1/employees/{id}/subordinates`    | Get subordinates of employee      |
 
 ---
 
 ### 🧑‍🤝‍🧑 Team
 
 | Method | Endpoint                              | Description                    |
-|--------|----------------------------------------|--------------------------------|
+|--------|---------------------------------------|--------------------------------|
 | GET    | `/api/v1/teams`                       | List all teams                 |
 | GET    | `/api/v1/teams/{id}`                  | Get team by ID                 |
-| POST   | `/api/v1/teams`                       | Create a new team              |
-| PUT    | `/api/v1/teams/{id}`                  | Update team info               |
-| DELETE | `/api/v1/teams/{id}`                  | Delete team                    |
+| POST   | `/api/v1/teams`                       | Create one or many new teams   |
+| PUT    | `/api/v1/teams/`                      | Update one or many teams info  |
+| DELETE | `/api/v1/teams/`                      | Delete one or many teams       |
 | GET    | `/api/v1/teams/{id}/employees`        | Get all employees in a team    |
 | GET    | `/api/v1/teams/{id}/leaders`          | Get leaders of a team          |
 
@@ -169,44 +170,44 @@ Use Postman or Insomnia to test the api.
 | Method | Endpoint             | Description                          |
 |--------|----------------------|--------------------------------------|
 | GET    | `/api/v1/leaders`    | List all leadership assignments      |
-| POST   | `/api/v1/leaders`    | Assign leader to team                |
-| DELETE | `/api/v1/leaders`    | Remove leader from team              |
+| POST   | `/api/v1/leaders`    | Assign leader(s) to team             |
+| DELETE | `/api/v1/leaders`    | Remove leader(s) from team           |
 
 ---
 
 ### 🧩 Role
 
-| Method | Endpoint              | Description         |
-|--------|-----------------------|---------------------|
-| GET    | `/api/v1/roles`       | List all roles      |
-| GET    | `/api/v1/roles/{id}`  | Get role by ID      |
-| POST   | `/api/v1/roles`       | Create a new role   |
-| PUT    | `/api/v1/roles/{id}`  | Update role         |
-| DELETE | `/api/v1/roles/{id}`  | Delete role         |
+| Method | Endpoint              | Description                    |
+|--------|-----------------------|--------------------------------|
+| GET    | `/api/v1/roles`       | List all roles                 |
+| GET    | `/api/v1/roles/{id}`  | Get role by ID                 |
+| POST   | `/api/v1/roles`       | Create one or many new roles   |
+| PUT    | `/api/v1/roles`       | Update one or many roles       |
+| DELETE | `/api/v1/roles`       | Delete one or many roles       |
 
 ---
 
 ### 📂 Category
 
-| Method | Endpoint                   | Description         |
-|--------|----------------------------|---------------------|
-| GET    | `/api/v1/categories`       | List all categories |
-| GET    | `/api/v1/categories/{id}`  | Get category by ID  |
-| POST   | `/api/v1/categories`       | Create a new category|
-| PUT    | `/api/v1/categories/{id}`  | Update category     |
-| DELETE | `/api/v1/categories/{id}`  | Delete category     |
+| Method | Endpoint                   | Description                       |
+|--------|----------------------------|-----------------------------------|
+| GET    | `/api/v1/categories`       | List all categories               |
+| GET    | `/api/v1/categories/{id}`  | Get category by ID                |
+| POST   | `/api/v1/categories`       | Create one or many new categories |
+| PUT    | `/api/v1/categories`       | Update one or many categories     |
+| DELETE | `/api/v1/categories`       | Delete one or many categories     |
 
 ---
 
 ### ✅ Task
 
 | Method | Endpoint                             | Description                        |
-|--------|---------------------------------------|------------------------------------|
-| GET    | `/api/v1/tasks`                      | List all tasks (filterable)        |
+|--------|--------------------------------------|------------------------------------|
+| GET    | `/api/v1/tasks`                      | List all tasks                     |
 | GET    | `/api/v1/tasks/{id}`                 | Get task by ID                     |
-| POST   | `/api/v1/tasks`                      | Create a new task                  |
-| PUT    | `/api/v1/tasks/{id}`                 | Update task                        |
-| DELETE | `/api/v1/tasks/{id}`                 | Delete task                        |
+| POST   | `/api/v1/tasks`                      | Create one or many new tasks       |
+| PUT    | `/api/v1/tasks`                      | Update one or many tasks           |
+| DELETE | `/api/v1/tasks`                      | Delete one or many tasks           |
 | GET    | `/api/v1/tasks/{id}/comments`        | Get comments for a task            |
 | GET    | `/api/v1/tasks/{id}/subtasks`        | Get subtasks of a task             |
 
@@ -214,22 +215,22 @@ Use Postman or Insomnia to test the api.
 
 ### 💬 Comment
 
-| Method | Endpoint                    | Description         |
-|--------|-----------------------------|---------------------|
-| GET    | `/api/v1/comments`          | List all comments   |
-| GET    | `/api/v1/comments/{id}`     | Get comment by ID   |
-| POST   | `/api/v1/comments`          | Create a new comment|
-| PUT    | `/api/v1/comments/{id}`     | Update comment      |
-| DELETE | `/api/v1/comments/{id}`     | Delete comment      |
+| Method | Endpoint                    | Description                     |
+|--------|-----------------------------|---------------------------------|
+| GET    | `/api/v1/comments`          | List all comments               |
+| GET    | `/api/v1/comments/{id}`     | Get comment by ID               |
+| POST   | `/api/v1/comments`          | Create one or many new comments |
+| PUT    | `/api/v1/comments`          | Update one or many comments     |
+| DELETE | `/api/v1/comments`          | Delete one or many comments     |
 
 ---
 
 ### 🔁 Refresh Token (Admin/Internal Use)
 
-| Method | Endpoint               | Description                  |
-|--------|------------------------|------------------------------|
-| GET    | `/api/v1/tokens`       | List all refresh tokens      |
-| DELETE | `/api/v1/tokens/{id}`  | Revoke a specific token      |
-| DELETE | `/api/v1/tokens/type/{type}` | Revoke all/inactive tokens |
+| Method | Endpoint                     | Description                  |
+|--------|------------------------------|------------------------------|
+| GET    | `/api/v1/tokens`             | List all refresh tokens      |
+| DELETE | `/api/v1/tokens/{id}`        | Revoke a specific token      |
+| DELETE | `/api/v1/tokens/type/{type}` | Revoke all/inactive tokens   |
   
 
