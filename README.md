@@ -257,7 +257,7 @@ Use Postman or Insomnia to test the api.
 ### InSomnia is used to test this api project. Below are a few images demonstrating how this api project works. 
 
 ![Login](./assets/Login.PNG)
-> [1] Demonstrates a successful login using a POST request with user credentials. The response includes a JWT token and expiration details.
+> [1] A successful login using a POST request with user credentials. The response includes a JWT token and expiration details.
 ---
 
 ![Use jwt token string to access endpoints](./assets/access-token.PNG)
@@ -271,16 +271,16 @@ Use Postman or Insomnia to test the api.
 ![Update Task(s) 1](./assets/Update1.PNG)
 ![Update Task(s) 2](./assets/Update2.PNG)
 ![Update Task(s) 3](./assets/Update3.PNG)
-> [4] Demonstrates updating one or many tasks metadata. The response confirms the update.
+> [4] Update one or many tasks metadata. The response confirms the update.
 ---
 
 ![Get Task(s) 1](./assets/Get1.PNG)
 ![Get Task(s) 2](./assets/Get2.PNG)
-> [5] Retrieves a list of tasks using a GET request. The response includes task metadata such as priority, completion status, and timestamps.
+> [5] Retrieve a list of tasks using a GET request. The response includes task metadata such as priority, completion status, and timestamps.
 ---
 
 ![Failed Delete Task](./assets/Delete1.PNG)
-> [6] Delete two tasks with IDs 1 and 2 respectively. Shows a failed DELETE request due to invalid task status. The error message explains that only archived or canceled tasks can be deleted.
+> [6] Deletes two tasks with IDs 1 and 2 respectively. Shows a failed DELETE request due to invalid task status. The error message explains that only archived or canceled tasks can be deleted.
 ---
 
 ![Successfully Delete Task](./assets/Delete2.PNG)
