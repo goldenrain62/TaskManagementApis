@@ -253,7 +253,38 @@ Use Postman or Insomnia to test the api.
 
 
 
-## 📷 Screenshots
+## 📷 API Testing Screenshots
+### InSomnia is used to test this api project 
+
+![Login](./assets/Login.PNG)
+> [1] Demonstrates a successful login using a POST request with user credentials. The response includes a JWT token and expiration details.
+
+![Use jwt token string to access endpoints](./assets/access-token.PNG)
+> [2] Paste jwt token string into Token in Auth to access endpoints.
+
+![Create Task(s)](./assets/Create.PNG)
+> [3] Sends a POST request with task details in JSON format. The response confirms successful creation of the task with a 200 OK status.
+
+![Update Task(s) 1](./assets/Update1.PNG)
+![Update Task(s) 2](./assets/Update2.PNG)
+![Update Task(s) 3](./assets/Update3.PNG)
+> [4] Demonstrates updating one or many tasks metadata. The response confirms the update.
+
+![Get Task(s) 1](./assets/Get1.PNG)
+![Get Task(s) 2](./assets/Get2.PNG)
+> [5] Retrieves a list of tasks using a GET request. The response includes task metadata such as priority, completion status, and timestamps.
+
+![Failed Delete Task](./assets/Delete1.PNG)
+> [6] Delete two tasks with IDs 1 and 2 respectively. Shows a failed DELETE request due to invalid task status. The error message explains that only archived or canceled tasks can be deleted.
+
+![Successfully Delete Task](./assets/Delete2.PNG)
+> [7] Deletes a task with ID 2. The response confirms successful deletion with a 200 OK status and a clear success message.
+
+![Refresh Token](./assets/Refresh.PNG)
+> [8] Shows how to refresh access tokens. The response includes a new access token, refresh token, and expiration time.
+
+![Logout](./assets/Logout.PNG)
+> [9] Confirms a successful logout operation for user ID 2. The server responds with a success message and status code 200 OK.
 
   
 
