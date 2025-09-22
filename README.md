@@ -115,7 +115,7 @@ dotnet run
 - **dotnet build**: Once again compiles the project and checks for any errors. 
 - **dotnet run**: Launches the application and starts the web server.
 
-Use Postman or Insomnia to test the api.
+Use Postman or Insomnia to test the api. The sample data to test, just check each file in Data/Configurations.
 
 
 ## 🧭 Endpoints
@@ -265,7 +265,7 @@ Use Postman or Insomnia to test the api.
 ---
 
 ![Create Task(s)](./assets/Create.PNG)
-> [3] Sends a POST request with task details in JSON format. The response confirms successful creation of the task with a 200 OK status.
+> [3] Sends a POST request with task details in JSON format. The response confirms successful creation of 2 tasks with a 200 OK status.
 ---
 
 ![Update Task(s) 1](./assets/Update1.PNG)
