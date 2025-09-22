@@ -158,8 +158,8 @@ Use Postman or Insomnia to test the api.
 | GET    | `/api/v1/teams`                       | List all teams                 |
 | GET    | `/api/v1/teams/{id}`                  | Get team by ID                 |
 | POST   | `/api/v1/teams`                       | Create one or many new teams   |
-| PUT    | `/api/v1/teams/`                      | Update one or many teams info  |
-| DELETE | `/api/v1/teams/`                      | Delete one or many teams       |
+| PUT    | `/api/v1/teams`                       | Update one or many teams info  |
+| DELETE | `/api/v1/teams`                       | Delete one or many teams       |
 | GET    | `/api/v1/teams/{id}/employees`        | Get all employees in a team    |
 | GET    | `/api/v1/teams/{id}/leaders`          | Get leaders of a team          |
 
@@ -210,6 +210,18 @@ Use Postman or Insomnia to test the api.
 | DELETE | `/api/v1/tasks`                      | Delete one or many tasks           |
 | GET    | `/api/v1/tasks/{id}/comments`        | Get comments for a task            |
 | GET    | `/api/v1/tasks/{id}/subtasks`        | Get subtasks of a task             |
+
+---
+
+### ✅ TaskState
+
+| Method | Endpoint                   | Description                         |
+|--------|----------------------------|-------------------------------------|
+| GET    | `/api/v1/taskstates`       | List all taskstates                 |
+| GET    | `/api/v1/taskstates/{id}`  | Get taskstates by ID                |
+| POST   | `/api/v1/taskstates`       | Create one or many new taskstates   |
+| PUT    | `/api/v1/taskstates`       | Update one or many taskstates       |
+| DELETE | `/api/v1/taskstates`       | Delete one or many taskstates       |
 
 ---
 
